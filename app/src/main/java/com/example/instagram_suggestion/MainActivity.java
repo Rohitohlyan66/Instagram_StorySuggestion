@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         bar = findViewById(R.id.bars);
 
 
+        //This will animate our Progress Bar
         ObjectAnimator animator = ObjectAnimator.ofInt(bar, "progress", 100);
         animator.setDuration(4000);
         animator.setInterpolator(new LinearInterpolator());
